@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Angular Test</title>
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="styles/styles.css">
+      <!-- JS Sources can be found below -->
+  </head>
+
+  <body ng-app="angularTest" class="container">
+    <div class="jumbotron">
+      <h1>Flywheel Code Challenge</h1>
+    </div>
+
+    <!-- Main view  -->
+    <div ui-view></div>
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="src/angularTest.module.js"></script>
+    <script src="src/angularTest.config.js"></script>
+    <script src="src/sessions/session-list.controller.js"></script>
+    <script src="src/sessions/session-detail.controller.js"></script>
+    <script src="src/services/session.service.js"></script>
+
+  </body>
+
+</html>

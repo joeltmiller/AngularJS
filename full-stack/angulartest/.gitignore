@@ -1,0 +1,7 @@
+# App
+/node_modules
+/app/bower_components
+/.tmp
+
+# OS
+.DS_Store

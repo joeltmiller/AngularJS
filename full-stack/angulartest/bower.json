@@ -1,0 +1,16 @@
+{
+  "name": "AngularTest",
+  "version": "0.0.1",
+  "main": "app/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components"
+  ],
+  "appPath": "app",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "~3.3.5"
+  }
+}
