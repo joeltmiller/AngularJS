@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="ServiceApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <!-- <script src="client.js"></script> -->
+
+    <script src="app.module.js"></script>
+
+    <!-- Controllers -->
+    <script src="BlueController.js"></script>
+    <script src="RedController.js"></script>
+    <script src="OrangeController.js"></script>
+
+    <!-- Services -->
+    <script src="LambdaService.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body class="container">
+
+    <br />
+    <br />
+    <div ng-controller="BlueController as blue" class="well">
+      {{blue.lambda}}
+      <br />
+      <input type="text" ng-model="blue.lambda.bestCohort" />
+      {{blue.movieData.omdb}}
+    </div>
+
+    <div ng-controller="RedController as red" class="well">
+      {{red.lambda}}
+      <br />
+      <input type="text" ng-model="red.lambda.bestCohort" />
+      {{red.movieData.omdb}}
+    </div>
+
+    <div ng-controller="OrangeController as orange" class="well">
+      {{orange.lambda}}
+      <br />
+      <input type="text" ng-model="orange.lambda.bestCohort" />
+      {{orange.movieData.omdb}}
+    </div>
+
+  </body>
+</html>
