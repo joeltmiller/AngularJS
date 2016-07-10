@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="httpApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Huzzah!</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="CallController">
+
+    <button ng-click="getMovieStuff()">Make OMDB Call</button>
+
+    <div ng-show="buttonClicked">
+
+      <span>Title: {{movie.Title}}</span>
+      <span>Rated: {{movie.Rated}}</span>
+      <span>Directed by: Visionary Director {{movie.Director}}</span>
+
+      <img ng-src="{{movie.Poster}}" />
+
+    </div>
+  </body>
+</html>
