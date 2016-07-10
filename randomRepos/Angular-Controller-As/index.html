@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="MainController as main">
+        {{main.message}}
+    <div ng-controller="AnotherController as another">
+            {{another.message}}
+        <div ng-controller="YetAnotherController as yetAnother">
+            <input type="text" ng-model="yetAnother.message">
+            {{yetAnother.message}}
+        </div>
+
+    </div>
+
+</body>
+</html>
