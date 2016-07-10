@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="toDoApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body ng-controller="TaskController">
+    <input type="text" ng-model="tempTask" />
+    <button ng-click="addTask()">Add</button>
+    <br />
+
+    <div class="danger" ng-show="showError">
+      YOU NEED TO ENTER TEXT TO ADD TASK please.
+    </div>
+
+    tempTask's current value is: {{tempTask}}
+    <br />
+    Tasks:
+    <ul>
+      <li ng-repeat="task in taskList track by $index">
+        <input type="checkbox" ng-model="task.complete" />{{task.name}}
+      </li>
+    </ul>
+
+    <button ng-click="removeChecked()">Remove Checked</button>
+
+
+  </body>
+</html>

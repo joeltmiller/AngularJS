@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="routeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>
+
+    </title>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="client.js"></script>
+  </head>
+  <body class="container">
+    <div class="jumbotron">
+      <h1>AngularJS Router</h1>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#/">Thing</a>
+          </li>
+          <li>
+            <a href="#/about">Thing</a>
+          </li>
+          <li>
+            <a href="#/contact">Thing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div ng-view>
+
+    </div>
+
+
+  </body>
+</html>

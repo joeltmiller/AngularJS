@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Things!</title>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+
+</head>
+<body ng-controller="MainController">
+    <h1>Angular Built In Directives</h1>
+    {{message}}
+    <br/><br/>
+    <a ng-href="link">Click Here</a>
+    <br/><br/>
+    <img ng-src="http://www.gravatar.com/avatar/{{user.id}}"/>
+
+    <label>Click here to toggle: <input type="checkbox" ng-model="checked"></label><br/>
+    <br/>
+    <div ng-show="checked">
+        <button ng-disabled="checked">Button here</button>
+    </div>
+    <br/>
+    <label>Check this to check both:<br/> <input type="checkbox" ng-model="thing"></label><br/>
+    <input type="checkbox" ng-checked="thing"/>
+
+    {{thing}}
+
+    <h2>Which is your favorite?</h2>
+
+    <div ng-repeat="name in names">
+
+        {{name}}
+
+        <input type="radio" ng-model="my.favorite" ng-value="name"/>
+
+    </div>
+
+
+    <div>You chose {{my.favorite}}</div>
+
+</body>
+</html>
