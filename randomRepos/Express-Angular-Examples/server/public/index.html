@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="reqApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular + Express = Awesome</title>
+    <script src="angular.min.js"></script>
+    <script src="client.js"></script>
+  </head>
+  <body ng-controller="OrangeController">
+    <h1>{{message}} ~ Makin ~ Stuff ~ Happen</h1>
+    Instructors:
+    <ul>
+      <li ng-repeat="person in instructors">
+        {{person}}
+      </li>
+    </ul>
+
+    Staff:
+    <ul>
+      <li ng-repeat="blah in staff">
+        {{blah}}
+      </li>
+    </ul>
+
+     <br/>
+    <img src="http://vignette1.wikia.nocookie.net/arresteddevelopment/images/a/a5/Tobias.jpg/revision/latest?cb=20111027201322" />
+  </body>
+</html>

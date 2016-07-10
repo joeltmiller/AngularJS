@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="factoryApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.js"></script>
+  </head>
+  <body>
+    <h2>AngularJS Factories</h2>
+
+    <div ng-controller="ViewController as view">
+      Author: {{view.data.val.author}}<br />
+      Title: {{view.data.val.title}}<br />
+      Released: {{view.data.val.released}}<br />
+      <input ng-model="view.data.val.author" /><br />
+      <input ng-model="view.data.val.title" /><br />
+      <input ng-model="view.data.val.released" /><br />
+      <button>Save</button>
+      Whole Object: {{view.data}}
+    </div>
+
+
+  </body>
+</html>
